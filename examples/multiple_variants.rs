@@ -74,7 +74,7 @@ impl Demo {
 
 impl eframe::App for Demo {
     fn ui(&mut self, ui: &mut egui::Ui, _frame: &mut eframe::Frame) {
-        egui::CentralPanel::default().show_inside(ui, |ui| {
+        egui::CentralPanel::default().show(ui, |ui| {
             for (family, icon) in [
                 ("phosphor-thin", thin::FILE_CODE),
                 ("phosphor-light", light::FILE_CODE),

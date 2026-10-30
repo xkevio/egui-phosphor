@@ -22,7 +22,7 @@ impl Demo {
 
 impl eframe::App for Demo {
     fn ui(&mut self, ui: &mut egui::Ui, _frame: &mut eframe::Frame) {
-        egui::CentralPanel::default().show_inside(ui, |ui| {
+        egui::CentralPanel::default().show(ui, |ui| {
             egui::ScrollArea::vertical()
                 .auto_shrink([false, false])
                 .show(ui, |ui| {

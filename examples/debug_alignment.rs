@@ -22,7 +22,7 @@ impl Demo {
 
 impl eframe::App for Demo {
     fn ui(&mut self, ui: &mut egui::Ui, _frame: &mut eframe::Frame) {
-        egui::CentralPanel::default().show_inside(ui, |ui| {
+        egui::CentralPanel::default().show(ui, |ui| {
             for size in [16.0, 24.0, 32.0, 48.0, 64.0, 92.0] {
                 let resp = ui.label(
                     egui::RichText::new(format!("FILE_CODE {}", egui_phosphor::regular::FILE_CODE))
